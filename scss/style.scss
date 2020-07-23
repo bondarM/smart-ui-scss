@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+$lato: "Lato", sans-serif;
+$col-w: #fff;
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000000;
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+p {
+  color: #000000;
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+}
+
+// -------------------------------------------------header-----------------------------------------
+header {
+  background-image: url(../img/main_image.png);
+  height: 743px;
+  box-shadow: inset -1px -139px 62px -20px rgba(0, 0, 0, 0.64);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.menu {
+  text-decoration: none;
+  li {
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  a {
+    text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+    color: #ffffff;
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    &:hover {
+      color: #c7c7c7;
+      text-decoration: none;
+    }
+  }
+}
+
+.menu__toggle__block {
+  margin-top: 45px;
+  &:hover .menu_togle {
+    background-color: #c7c7c7;
+  }
+}
+
+.menu_togle {
+  background-color: rgb(255, 255, 255);
+  width: 15px;
+  height: 2px;
+  margin-top: 3px;
+}
+
+.banner__block {
+  text-align: center;
+  margin-top: 200px;
+
+  div {
+    font-family: "Times New Roman", Times, bold;
+    font-style: italic;
+    color: rgb(238, 238, 238);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  button {
+    background-color: rgba(253, 245, 230, 0.034);
+    color: $col-w;
+    border: 2px solid #fff;
+    padding: 20px 80px;
+    border-radius: 0px;
+    margin-top: 20px;
+    &:hover {
+      border: 2px solid rgb(66, 66, 66);
+    }
+  }
+  h1 {
+    font-size: 100px;
+    color: oldlace;
+    margin-top: 10px;
+  }
+  p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 40px;
+  }
+}
+
+// ----------------------------------------------------info-----------------------------------
+
+.info {
+  margin-top: 100px;
+  width: 400px;
+  margin-bottom: 100px;
+  &__text {
+    text-align: center;
+  }
+  &__name {
+    text-align: center;
+  }
+}
+
+.icon {
+  margin-left: 151px;
+  margin-bottom: 20px;
+}
+
+.border__red {
+  width: 88px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #f78e83;
+  margin-bottom: 20px;
+}
+
+// ---------------------------phone app -----------------------------------------
+.app {
+  background-color: #f7f7f7;
+  &__block {
+    margin-top: 100px;
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.img__iphone {
+  width: 440px;
+  margin-left: 50px;
+}
+
+.border__red2 {
+  width: 88px;
+  height: 1px;
+
+  background-color: #c04537;
+  margin-bottom: 20px;
+}
+
+.download__app {
+  margin-right: 15px;
+}
+.download__block {
+  margin-top: 25px;
+}
+
+// ---------------------------------------------- review------------------
+%text__reviev {
+  color: $col-w;
+  margin: 50px;
+  font-weight: 200;
+  opacity: 0.4;
+  line-height: 36px;
+}
+
+.review {
+  background-image: url(../img/bg.png);
+  height: 400px;
+  background-color: #4a3949;
+  text-align: center;
+
+  &__text {
+    @extend %text__reviev;
+    font-size: 30px;
+  }
+  &__author {
+    @extend %text__reviev;
+  }
+}
+
+.profile {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #4c3b4b;
+  margin-top: 0 !important;
+}
+
+.browse {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: 600;
+}
+
+// ------------------------------------meal--------------------------------
+
+%img__meal {
+  background-image: url(../img/111111.png);
+  width: 269px;
+  height: 200px;
+  box-shadow: inset 0px 0px 168px -12px rgba(0, 0, 0, 0.86);
+}
+
+%img__hov {
+  background-image: url(../img/pink_bg.png);
+  transition: 0.1s;
+}
+
+.cusines__name {
+  color: $col-w;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+.img__block {
+  @extend %img__meal;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block2 {
+  @extend %img__meal;
+  background-position: -350px -20px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block3 {
+  @extend %img__meal;
+  background-position: -669px -20px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block4 {
+  @extend %img__meal;
+  background-position: -1003px -25px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block5 {
+  @extend %img__meal;
+  background-position: -1305px -20px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block6 {
+  @extend %img__meal;
+  background-position: 1579px -238px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block7 {
+  @extend %img__meal;
+  background-position: 1271px -225px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block8 {
+  @extend %img__meal;
+  background-position: 948px -225px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block9 {
+  @extend %img__meal;
+  background-position: 607px -225px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+.img__block10 {
+  @extend %img__meal;
+  background-position: 319px -225px;
+  &:hover {
+    @extend %img__hov;
+  }
+}
+
+// -----------------------------------------------statistic------------------------------
+
+.stat__number {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.about {
+  background-color: #dddddd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about__text {
+  span {
+    font-size: 14px;
+  }
+}
+
+.about__text__bold {
+  font-weight: 600;
+}
